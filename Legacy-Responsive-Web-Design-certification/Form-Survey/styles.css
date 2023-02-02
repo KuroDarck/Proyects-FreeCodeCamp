@@ -1,0 +1,254 @@
+@import url(./variables.css);
+@import url(./Normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Sofia+Sans:ital,wght@1,300&display=swap');
+
+
+*{
+    font-family:var(--textfont); 
+}
+
+body{
+
+    background: var(--imgbackground) no-repeat;
+    background-size:cover;
+    font: var( --textfont); 
+    width: 100%;
+    height: auto;
+
+}
+
+#header{
+    width: 50%;
+    height: 150px;
+    margin: 5% 25% 0% 25%;
+    justify-content: center;
+    color: var(--fontColor);
+}
+
+#title{
+    width: 100%;
+    font-size: var(--titleZize);
+    text-align: center;
+}
+
+#description{
+    width: 100%;
+    font-size: var(--decriptionZize);
+    text-align: center;
+
+}
+
+#survey-form{
+    width: 50%;
+    height: auto;
+    display: block;
+    font-size: var(--formTextZize);
+    color: var(--fontColor);
+    margin: 0% 25% 5% 25%;
+    padding: 1% 5% 3% 5%;
+    background-color:var(--backgroundform);
+    border-radius: 1em;
+
+}
+
+.form-interline{
+    line-height: 2em;
+    width: 100%;
+}
+#name-label{
+    text-transform: capitalize;
+
+}
+
+#name{
+    width: 100%;
+    height: 35px;
+    border-radius: 1em;
+
+}
+#email-label{
+    text-transform: capitalize;
+}
+ #email{
+    width: 100%;
+    height: 35px;
+    border-radius: 1em;
+
+ }
+
+#number-label{
+    text-transform: capitalize;
+}
+
+#number{
+    width: 100%;
+    height: 35px;
+    border-radius: 1em;
+}
+
+#dropdown{
+    width: 100%;
+    height: 35px;
+    border-radius: 1em;
+}
+
+#comment{ 
+    width: 100%;  
+    line-height: 1.3em;
+  }
+
+#submit{
+    margin: 5% 0%;
+    width: 100%;
+    height: 35px;
+    background-color: var(--buttonColor);
+    border-color: var(--buttonBorderColor);
+  }
+
+  #submit:hover{
+    border: 2px solid;
+    background-color: var(--buttonColorHover);
+    border-color: var(--buttonBorderColorHover);
+  }
+
+  /*Medidas Responcivas*/
+
+@media (min-width:300px){
+   
+    #header{
+        width: 100%;
+        margin: 5% 0% 1% 0%;
+        padding: 5% 3%;
+    }
+
+    #title{ 
+        font-size: 2em;
+    }
+    
+    #description{
+        font-size: 0.8em;
+    }
+
+    #survey-form{
+        width: 100%;
+        margin: 0% 0% 5% 0%;
+        padding: 1% 5% 3% 5%;
+        
+    }
+    
+    
+}
+
+/*siguiente 400px*/
+@media (min-width:400px){
+
+    #title{ 
+        font-size: 2.3em;
+    }
+    
+    #description{
+        font-size: 0.9em;
+    }
+        
+}
+
+/*siguiente 500px*/
+@media (min-width:500px){
+    #header{
+        width: 90%;
+        margin: 2% 5% 4% 5%;
+        padding: 4% 3%;
+    }
+
+    #title{
+        font-size: 2.3em;
+    }
+    
+    #description{
+        width: 100%;
+        font-size: 1.1em;
+    
+    }
+    
+    
+#survey-form{
+    width: 90%;
+    margin: 0% 5% 5% 5%;
+
+}
+        
+}
+
+/*siguiente 600px*/
+@media (min-width:600px){
+    #header{
+        width: 80%;
+        margin: 1% 10% 5% 10%;
+    }
+    
+    
+#survey-form{
+    width: 80%;
+    margin: 0% 10% 5% 10%;
+
+}
+        
+}
+
+/*siguiente 700px*/
+@media (min-width:700px){
+    #header{
+        width: 75%;
+        margin: 1% 12.5% 5% 12.5%;
+        padding: 3% 3%;
+    }
+    
+        
+    #title{
+        font-size: 2.5em;
+    }
+    
+    #description{
+        width: 100%;
+        font-size: 1.3em;
+    
+    }
+    
+    #survey-form{
+    width: 70%;
+    margin: 0% 12.5% 5% 12.5%;
+
+}
+        
+}
+
+/*siguiente 800px*/
+@media (min-width:800px){
+    #header{
+        width: 70%;
+        margin: 1% 15% 3% 15%;
+    }
+    
+    #survey-form{
+    width: 70%;
+    margin: 0% 15% 5% 15%;
+
+}
+        
+}
+
+/*siguiente 900px*/
+@media (min-width:900px){
+    #header{
+        width: 65%;
+        margin: 1% 17.5% 3% 17.5%;
+    }
+    
+    #survey-form{
+    width: 65%;
+    margin: 0% 17.5% 5% 17.5%;
+
+}
+        
+}
+

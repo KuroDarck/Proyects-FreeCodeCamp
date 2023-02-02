@@ -1,0 +1,19 @@
+:root{ 
+
+	/*Variables de Color*/
+	--bodyColor:#F8F9F9;
+	--mainColor:#EAECEE;
+	--img-divColor:#FFFFFF;
+
+	/*Variables de Fuente*/
+	--tipoFuente: normal medium 'Gill Sans','Gill Sans MT','Goudy Bookletter 1911','Linux Libertine O','Liberation Serif',Candara,serif;
+	--titleZize:3em;
+	--titleWeight:20px;
+
+	--subTitleZize:1em;
+	--subTitleWeight:0.5em;
+
+	--generalfontZize:1em;
+	--letterSpacinGeneral:0.1em;
+
+}

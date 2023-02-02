@@ -1,0 +1,155 @@
+@import url(./variables.css);
+@import url(./Normalize.css);
+
+body{
+	background-color: var(--bodyColor);
+	margin: 0px;
+	padding: 0px;
+
+	font: var(--tipoFuente);
+}
+
+#main{
+	width: 90%;
+	height: auto;
+	margin: 2% 5%;
+	padding: 0%;
+	background-color:var(--mainColor);
+
+	border-radius: 5%;
+}
+
+#title{
+	text-align: center;
+	font-size: var(--titleZize);
+	letter-spacing:var(--letterSpacinGeneral);
+	font-weight:var(--titleWeight);
+	margin: 1%;
+	padding: 1%;
+}
+
+#SubTitle{
+	text-align: center;
+	font-size: var(--subTitleZize);
+	letter-spacing:var(--subTitleSpacinLetter);
+	font-weight:var(--subTitleWeight);
+	margin: 1%;
+	padding: 0%;
+}
+
+
+#img-div{
+	width: 98%;
+	height: auto;
+	margin: 1%;
+	padding: 1%;
+	background-color:var(--img-divColor);
+
+}
+
+#image{
+	max-width: 100%;
+	height: auto;
+	display:block;
+}
+
+#img-caption{
+	text-align: center;
+	font-size: var(--generalfontZize);
+	margin: 1%;
+}
+
+#titletimeline{
+	margin: 5% 0% 5% 0%;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#tribute-info{
+	text-align: justify;
+	font-size: var(--generalfontZize);
+	margin: 1% 5% 5% 5%;
+	letter-spacing: var(--letterSpacinGeneral);
+	text-indent: 0.2em;
+}
+
+#foot{
+	font-size: var(--generalfontZize);
+	letter-spacing: var(--letterSpacinGeneral);
+	text-align: center;
+	padding: 0% 0% 5% 0%;
+}
+
+#tribute-link{
+	text-decoration: none;
+}
+
+#tribute-link:hover{
+	color: #0ffe0a;
+}
+
+
+/*Movil Pequeño*/
+@media (min-width:300px) {
+	
+#main{
+ border-radius: 3%;
+	 }
+    #title{
+        font-size: 2em;
+    }
+
+    #img-div{
+        width: 98%;
+        margin: 1%;
+        padding: 1%;
+    
+    }
+}
+
+/*Tablet*/
+@media (min-width:500px) {
+    #title{
+        font-size: 2.2em;
+    }
+
+	#tribute-info{
+		margin: 1% 10% 5% 10%;
+	}
+    
+}
+
+/*Portatil*/
+@media (min-width:700px) {
+	#title{
+        font-size: 2.7em;
+    }
+
+	#titletimeline{
+		margin: 5% 0% 5% 0%;
+		text-align: center;
+		font-size: 1.4em;
+	}
+
+	#tribute-info{
+		margin: 1% 15% 5% 15%;
+	}
+
+}
+
+/*Desktop*/
+@media (min-width:950) {
+  
+	#tribute-info{
+		margin: 1% 20% 5% 20%;
+	}
+}
+
+@media (min-width:1100px) {
+    #title{
+        font-size: 2.9em;
+    }
+	#tribute-info{
+		margin: 1% 25% 5% 25%;
+	}
+}

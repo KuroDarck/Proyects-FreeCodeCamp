@@ -1,0 +1,26 @@
+:root{
+    
+    /* Imagen de fondo*/
+    --imgbackground: linear-gradient(280deg, rgba(234, 0, 255, 0.37), rgba(38, 203, 232, 0.479)),url(./img/Destokopacity.jpg);
+
+     /* fuente de la pagina*/
+    --textfont:'Martian Mono', monospace;
+
+     /* tamaño de las fuentes*/
+    --titleZize:3em;
+    --decriptionZize:1em;
+    --formTextZize:0.9em;
+
+    /* color de las fuentes*/
+    --fontColor:#ffffff;
+
+    /* color de fondo del  formulario*/
+    --backgroundform:rgba(25, 30, 34, 0.7);
+
+    /*color del Submit*/
+    --buttonColor:#15ff00;
+    --buttonBorderColor:#91ff00;
+
+    --buttonColorHover:#ffd000;
+    --buttonBorderColorHover:#fffb00;
+}

@@ -1,150 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>R*H*M Colection</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="/website/css/uicons-solid-rounded.css" rel="stylesheet">
+  <title>R*H*M Collection</title>
 </head>
 
-<body >
+<body>
 
-    <header id="header">
-        <img src="./src/Logo/Logotype.jpg" alt="Logo tipo" id="header-img">
-        <nav id="nav-bar">
-            <ul class="list">
-                <li><a href="#" class="nav-link">Home</a></li>
-               <li><a href="#Features" class="nav-link">Features</a></li>
-               <li><a href="#How_It_Works" class="nav-link">How It Works</a></li>
-               <li><a href="#Pricing" class="nav-link">Pricing</a></li>
-        </nav>
-    </header>
-    <div class="body__div--header"></div>
+  <header id="header">
+    <img src="src/Logo/Logotype.jpg" id="header-img">
+    <nav id="nav-bar">
+      <ul>
+        <li class="menu">
+          <img src="src/Icon/bars-sort.png" alt="Menu" class="Menu__li--img2 img__dimencion">
+          <ul class="list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#Features" class="nav-link">Features</a></li>
+            <li><a href="#How_It_Works" class="nav-link">How It Works</a></li>
+            <li><a href="#Pricing" class="nav-link">Pricing</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <article class="Main__Article Main__Article--1" >
-            <h2 class="Article__title">We build the Gamer PC of your dreams</h2>
-            <div class="Article--1--container">
-                <img src="src/Icon/message.gif" alt="Email" class="Article__1--img">
-                <form action="https://www.freecodecamp.com/email-submit" id="form" class="row g-2">
-                    <div class="form-delimiter">
-                        <input type="email" id="email" name="email" required placeholder="Email@exaple.com">
-                        
-                        <input type="submit" id="submit">
-                    </div>
-                </form>
-            
-             </div>
-             <p class="Article--1--info">To Contact Us, leave us your email and we will assist you giving you the best advice and taking you by the hand to fulfill your dream.</p>
+  <div class="body__div--header"></div>
 
-        </article>
+  <article class="Main__Article Main__Article--1">
+    <h2 class="Article__title">We build the Gamer PC of your dreams</h2>
+    <div class="Article--1--container"><img src="https://cdn-icons-gif.flaticon.com/6416/6416396.gif" class="Article__1--img">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <div class="form-delimiter">
+          <input type="email" id="email" class="form-control"name="email" required placeholder="Email@exaple.com">
 
-        <article class="Main__Article Main__Article--2" id="Features">
-            <h2 class="Article__title" >We distinguish ourselves for</h2>
-            <div class="Article--2--container">
-                <div ><img src="src/Icon/location.gif" alt="" class="Article--2--img"></div>
-                <div >
-                    <h3 class="Article__Subtitle">Secure location</h3>
-                    <p class="Article__2--info">Located in the Albrook shopping center by the giraffe corridor with 24 hour security.</p>
-                </div>
-                <div ><img src="src/Icon/clock.gif" alt="" class="Article--2--img"></div>
-                <div > 
-                    <h3 class="Article__Subtitle">Specific dates</h3>
-                    <p class="Article__2--info">We focus on providing you with the most realistic lead times to avoid delays. </p></div>
-                <div><img src="src/Icon/truck.gif" alt="" class="Article--2--img"></div>
-                <div>
-                    <h3 class="Article__Subtitle">Fast shipping</h3>
-                    <p class="Article__2--info">We make sure you receive your Gamer PC as soon as we have finished assembling it. We also offer free returns if you are not satisfied.</p>
-                </div>
-                <div ><img src="src/Icon/social-care.gif" alt="" class="Article--2--img"></div>
-                <div > 
-                    <h3 class="Article__Subtitle">Consulting</h3>
-                    <p class="Article__2--info">Committed to offering the best service, we help our customers with personalized advice to manage .</p></div>
-
-            </div>
-        </article>
-        <article class="Main__Article Main__Article--3" id="How_It_Works">
-            <h2 class="Article__title">How to build a gaming PC</h2>
-            <div class="Article__3--div">
-                <iframe src="https://www.youtube.com/embed/m9PJRBcAMPQ?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="video"></iframe>
-            </div>
-            <div class="Article__3--div2">
-                <h3 class="Article__Subtitle">List of components to build a PC in conditions!</h3>
-                <ul>
-                    <li>
-                        <p>Rizen 7 5800X Processor</p>
-                    </li>
-                    <li>
-                        <p>Asus ROG STRIX B550-F GAMMING motherboard (wi-fi)</p>
-                    </li>
-                    <li>
-                        <p>32gb Memory Ram ddr4 Corsair Vengance RGB PRO 3600</p>
-                    </li>
-                    <li>
-                        <p>RM850X Corsair power supply</p>
-                    </li>
-                    <li>
-                        <p>Radeon RX6600XT graphics card</p>
-                    </li>
-                    <li>
-                        <p>CoolerMaster Masterliquid Lite 240 liguid coolant</p>
-                    </li>
-                    <li>
-                        <p>SSD NVME M.2 Samsung 980 Pro</p>
-                    </li>
-                    <li>
-                        <p>ATX generic case</p>
-                    </li>
-                </ul>
-            </div>
-        </article>
-        <article class="Main__Article Main__Article--4" id="Pricing">
-            <h2 class="Article__title">PC Gamer for sale</h2>
-            <div class="Article__4--cards">
-
-                <div class="Article__4--img" >
-                    <img src="src/Product/laptopGamin.jpg" class="card-img-top" alt="Laptop_Gamer">
-                    <div class="card-body">
-                      <h5 class="card-title">Laptop Gamer  -- $1.990,00</h5>
-                      <p class="card-text">Laptop To enjoy your games wherever you are..</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-
-       
-                    <div class="Article__4--img" >
-                        <img src="src/Product/PC.gamer.jpg" class="card-img-top" alt="Laptop_Gamer">
-                        <div class="card-body">
-                          <h5 class="card-title">PC Gamer  -- $2.990,00</h5>
-                          <p class="card-text">PC To enjoy your games with the quality you expect.</p>
-                          <a href="#" class="btn btn-primary bt-position">Go somewhere</a>
-                        </div>
-                      </div>
-                    
-
-                        <div class="Article__4--img" >
-                            <img src="src/Product/Station_Gamer.jpg" class="card-img-top" alt="Laptop_Gamer">
-                            <div class="card-body">
-                              <h5 class="card-title">Station Gamer   -- $5.990,00</h5>
-                              <p class="card-text">The best gaming experience of your life.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
-            </div>
-        </article>
-
-
-    <footer id="footer">
-
-        <div class="fotter__div">
-            <ul class="fotter__ul">
-            <li> <a href="#" class="fotter__link">privacy</a> </li>
-            <li> <a href="#" class="fotter__link">terms</a></li>
-            <li> <a href="#" class="fotter__link">contac</a></li>
-            </ul>
+          <input type="submit" id="submit" class="btn btn-primary">
         </div>
-        <h4 id="copyrigth">Copyright &copy 2023, R*H*M colection</h4>
-    </footer>
+      </form>
+
+    </div>
+    <p class="Article--1--info">To Contact Us, leave us your email and we will assist you giving you the best advice and taking you by the hand to fulfill your dream.</p>
+
+  </article>
+
+  <article class="Main__Article Main__Article--2" id="Features">
+    <h2 class="Article__title">We distinguish ourselves for</h2>
+    <div class="Article--2--container">
+      <div><img src="https://cdn-icons-gif.flaticon.com/6844/6844486.gif" alt="" class="Article--2--img"></div>
+      <div>
+        <h3 class="Article__Subtitle">Secure location</h3>
+        <p class="Article__2--info">Located in the Albrook shopping center by the giraffe corridor with 24 hour security.</p>
+      </div>
+      <div><img src="https://cdn-icons-gif.flaticon.com/6416/6416401.gif" alt="Specific dates" class="Article--2--img"></div>
+      <div>
+        <h3 class="Article__Subtitle">Specific dates</h3>
+        <p class="Article__2--info">We focus on providing you with the most realistic lead times to avoid delays. </p>
+      </div>
+      <div><img src="https://cdn-icons-gif.flaticon.com/6416/6416387.gif" alt="Fast shipping" class="Article--2--img"></div>
+      <div>
+        <h3 class="Article__Subtitle">Fast shipping</h3>
+        <p class="Article__2--info">We make sure you receive your Gamer PC as soon as we have finished assembling it. We also offer free returns if you are not satisfied.</p>
+      </div>
+      <div><img src="https://cdn-icons-gif.flaticon.com/6172/6172524.gif" alt="consulting" class="Article--2--img"></div>
+      <div>
+        <h3 class="Article__Subtitle">Consulting</h3>
+        <p class="Article__2--info">Committed to offering the best service, we help our customers with personalized advice to manage .</p>
+      </div>
+
+    </div>
+  </article>
+
+  <article class="Main__Article Main__Article--3" id="How_It_Works">
+    <h2 class="Article__title">How to build a gaming PC</h2>
+    <div class="container__article--3">
+    <div class="Article__3--div">
+      <iframe src="https://www.youtube.com/embed/m9PJRBcAMPQ?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="video"></iframe>
+    </div>
+    <div class="Article__3--div2">
+      <h3 class="Article__Subtitle">List of components to build a PC in conditions!</h3>
+      <ul class="subtitle__list">
+        <li>
+          <p>Rizen 7 5800X Processor</p>
+        </li>
+        <li>
+          <p>Asus ROG STRIX B550-F GAMMING motherboard (wi-fi)</p>
+        </li>
+        <li>
+          <p>32gb Memory Ram ddr4 Corsair Vengance RGB PRO 3600</p>
+        </li>
+        <li>
+          <p>RM850X Corsair power supply</p>
+        </li>
+        <li>
+          <p>Radeon RX6600XT graphics card</p>
+        </li>
+        <li>
+          <p>CoolerMaster Masterliquid Lite 240 liguid coolant</p>
+        </li>
+        <li>
+          <p>SSD NVME M.2 Samsung 980 Pro</p>
+        </li>
+        <li>
+          <p>ATX generic case</p>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </article>
+  <article class="Main__Article Main__Article--4" id="Pricing">
+    <h2 class="Article__title">PC Gamer for sale</h2>
+    <div class="Article__4--cards">
+      <div class="Article__4--img">
+        <img src="https://falabella.scene7.com/is/image/FalabellaPE/16933353_1?wid=800&hei=800&qlt=70" class="card-img-top" alt="Laptop_Gamer">
+        <div class="card-body">
+          <h5 class="card-title">Laptop Gamer -- $1.990,00</h5>
+          <p class="card-text">Laptop To enjoy your games wherever you are..</p>
+          <a href="#" class="btn btn-outline-primary bt-position">Buy</a>
+        </div>
+      </div>
+
+      <div class="Article__4--img">
+        <img src="src/Product/PC.gamer.jpg" class="card-img-top" alt="PC_Gamer">
+        <div class="card-body">
+          <h5 class="card-title">PC Gamer -- $2.990,00</h5>
+          <p class="card-text">PC To enjoy your games with the quality you expect.</p>
+          <a href="#" class="btn btn-outline-primary bt-position">Buy</a>
+        </div>
+      </div>
+
+      <div class="Article__4--img">
+        <img src="https://gamerstreamer.net/wp-content/uploads/2022/01/xdrive-cabina-gamer.jpg" class="card-img-top" alt="Station_Gamer">
+        <div class="card-body">
+          <h5 class="card-title">Station Gamer -- $5.990,00</h5>
+          <p class="card-text">The best gaming experience of your life.</p>
+          <a href="#" class="btn btn-outline-primary bt-position">Buy</a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <footer id="footer">
+
+    <div class="fotter__div">
+      <ul class="fotter__ul">
+        <li> <a href="#" class="fotter__link ">privacy</a> </li>
+        <li> <a href="#" class="fotter__link ">terms</a></li>
+        <li> <a href="#" class="fotter__link ">contac</a></li>
+      </ul>
+    </div>
+    <h4 id="copyrigth">Copyright &copy 2023, R*H*M colection</h4>
+  </footer>
 </body>
 </html>

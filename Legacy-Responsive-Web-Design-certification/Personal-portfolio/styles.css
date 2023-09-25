@@ -1,0 +1,30 @@
+/* Estilos generales */
+
+*{
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-size: 1.5rem;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para el navbar fijo en la parte superior */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Puedes personalizar el color de fondo */
+    color: white; /* Puedes personalizar el color del texto */
+}
+
+/* Estilos para el espacio debajo del navbar para que el contenido no se solape */
+#welcome-section {
+    margin-top: 60px; /* Ajusta según el alto de tu navbar */
+}

@@ -11,7 +11,7 @@
 			<nav id="navbar">
 				<!-- El Header va Aquí -->
 				<header>
-					<img src="background.png" alt="logo de JavaScript" id="logo">
+					<img src="learn-js1.svg" alt="logo de JavaScript" id="logo">
 					<h1 id="JS_Documentation">Documentation</h1>
 				</header>
 				<!-- El Header Termina Aquí-->
@@ -36,6 +36,7 @@
 			<main id="main-doc">
 				<!-- Comienzo de las Secciones, deben haber 5 en total -->
 				<section id="Introduction" class="main-section">
+				<img src="background.png" id="magic-img">
 				<header>Introduction</header>
 				<p>
 					JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
@@ -69,9 +70,9 @@
 	<header>Hello world</header>
 	<p>
 		To get started with writing JavaScript, open the Scratchpad and write your first <span>"Hello world"</span> JavaScript code:
-		<pre>
-			<code>function greetMe(yourName) { alert("Hello " + yourName); }</code>
-			<code>greetMe("World");</code>
+		<pre class="pre-low_code">
+			<code>function greetMe(yourName) { alert("Hello " + yourName); }
+greetMe("World");</code>
 		</pre>
 		Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
 	</p>
@@ -94,7 +95,7 @@ You can declare a variable in three ways:
 <p>
 With the keyword var. For example,
 </p>
-<pre>
+<pre class="pre-low_code1">
 <code>var x = 42.</code>
 </pre>
 <p>
@@ -102,14 +103,14 @@ This syntax can be used to declare both local and global variables.</p>
 <p>
 By simply assigning it a value. For example,
 </p>
-<pre>
+<pre class="pre-low_code1">
 <code>x = 42.</code>
 </pre>
 <p>
 This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
 <p>
 With the keyword let. For example,</p>
-<pre>
+<pre class="pre-low_code1">
 <code>let y = 13.</code> 
 </pre>
 <p>
@@ -124,12 +125,13 @@ When you declare a variable outside of any function, it is called a global varia
 <p>
 JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
 </p>
-<pre>
+<pre class="pre-low_code1">
 <code>if (true) { var x = 5; } console.log(x); // 5</code>
 </pre>
 <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
-<pre>
-<code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined</code>
+<pre class="pre-low_code">
+<code>// ReferenceError: y is not defined
+if (true) { let y = 5; } console.log(y);</code>
 </pre>
 </section>
 <section id="Global_variables" class="main-section">
@@ -144,7 +146,7 @@ Consequently, you can access global variables declared in one window or frame fr
 <p>
 Puedes crear una constante con nombre y de solo lectura utilizando la palabra clave <span>const</span>. La sintaxis de un identificador constante es la misma que la de un identificador de variable: debe comenzar con una letra, un guión bajo <span>(_)</span> o un signo de dólar <span>($)</span> y puede contener caracteres alfabéticos, numéricos o de guión bajo.
 </p>
-<pre>
+<pre class="pre-low_code1">
 <code>const PI = 3.14;</code>
 </pre>
 <p>
@@ -156,7 +158,7 @@ Las reglas de alcance para las constantes son las mismas que las de las variable
 <p>
 No puedes declarar una constante con el mismo nombre que una función o variable en el mismo ámbito. Por ejemplo:
 </p>
-<pre>
+<pre class="pre-max_code">
 <code>
 // ESTO PROVOCARÁ UN ERROR
 function f() {};
@@ -171,7 +173,7 @@ var g; // declarar nuevamente g como variable
 <p>
 Sin embargo, los atributos de objetos no están protegidos, por lo que la siguiente declaración se ejecuta sin problemas.
 </p>
-<pre>
+<pre class="pre-low_code">
 <code>
 const MY_OBJECT = {"key": "value"};
 MY_OBJECT.key = "otherValue";
@@ -199,7 +201,7 @@ MY_OBJECT.key = "otherValue";
 <section id="if...else_statement" class="main-section">
 <header>if...else statement</header>
 <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
-<pre>
+<pre class="pre-midiun_code">
 <code>
 if (condition) {
     statement_1;
@@ -210,9 +212,8 @@ statement_2;
 </pre>
 <p>Condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
 <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
-    <pre>
-    <code>
-if (condition_1) {
+    <pre class="pre-max_code">
+    <code class="low_code">if (condition_1) {
     statement_1;
 } else if (condition_2) {
     statement_2;
@@ -224,9 +225,8 @@ if (condition_1) {
     </code>
 </pre>
 <p>In the case of multiple conditions, only the first logical condition that evaluates to true will be executed. To execute multiple statements, group them within a block statement (<span>{ ... }</span>). In general, it's good practice to always use block statements, especially when nesting if statements:</p>
-    <pre>
-    <code>
-if (condition) {
+    <pre class="pre-max_code">
+    <code>if (condition) {
     statement_1_runs_if_condition_is_true;
     statement_2_runs_if_condition_is_true;
 } else {
@@ -236,17 +236,16 @@ if (condition) {
     </code>
 </pre>
 <p>It is advisable not to use simple assignments in a conditional expression because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:</p>
-<pre>
-<code>
+<pre class="pre-low_code">
+<code class="low_code">
 if (x = y) {
     /* statements here */
 }
 </code>
 </pre>
 <p>If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:</p>
-<pre>
-<code>
-if ((x = y)) {
+<pre class="pre-low_code">
+<code class="low_code">if ((x = y)) {
     /* statements here */
 }
 </code>
@@ -255,9 +254,8 @@ if ((x = y)) {
 <section id="while_statement" class="main-section">
 <header>while statement</header>
 <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
-<pre>
-<code>
-while (condition) {
+<pre class="pre-low_code">
+<code class="low_code">while (condition) {
     statement;
 }
 </code>
@@ -267,9 +265,8 @@ while (condition) {
 <p>To execute multiple statements, use a block statement (<span>{ ... }</span>) to group those statements.</p>
 <p>Example:</p>
 <p>The following while loop iterates as long as <span>n</span> is less than three:</p>
-<pre>
-<code>
-var n = 0;
+<pre class="pre-midiun_code1">
+<code>var n = 0;
 var x = 0;
 while (n < 3) {
     n++;
@@ -294,9 +291,9 @@ while (n < 3) {
 <li>The JavaScript statements that define the function, enclose`d in curly brackets, <span>{ }</span>.</li>
 </ul>
 <p>For example, the following code defines a simple function named <span>square</span>:</p>
-<pre><code>function square(number) { return number * number; }</code></pre>
+<pre class="pre-low_code1"><code>function square(number) { return number * number; }</code></pre>
 <p>The function <span>square</span> takes one argument, called <span>number</span>. The function consists of one statement that says to return the argument of the function (that is, <span>number</span>) multiplied by itself. The return statement specifies the value returned by the function:</p>
-<pre><code>return number * number;</code></pre>
+<pre class="pre-low_code1"><code>return number * number;</code></pre>
 <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
 </section>
 <section id="Reference" class="main-section">

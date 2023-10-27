@@ -1,30 +1,287 @@
-/* Estilos generales */
+/*Fuentes: 
+            font-family: 'Autour One', cursive;
+            font-family: 'Chakra Petch', cursive;
+ Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Chakra+Petch:ital@1&family=Roboto+Mono&display=swap');
 
-*{
+/* Estilos generales */
+* {
     text-decoration: none;
     list-style: none;
 }
-body {
-    font-size: 1.5rem;
-}
 
-/* Estilos para pantallas más pequeñas */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    background-color:#95A5A6;
 }
 
 /* Estilos para el navbar fijo en la parte superior */
-#navbar {
-    position: fixed;
-    top: 0;
+header {
+    position: sticky;
+    display: flex;
     width: 100%;
-    background-color: #333; /* Puedes personalizar el color de fondo */
-    color: white; /* Puedes personalizar el color del texto */
+    height: 100px;
+    background-color: #17202A;
+    padding: 0px;
 }
 
+#img-header{
+    width: 300px;
+    border-radius: 10%;
+}
+
+#navbar {
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin: 0px;
+    padding-top: 35px;
+    color: white;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#navbar ul a {
+    font-family: 'Chakra Petch', cursive;
+    font-size: 1.3rem;
+    padding: 12px 12px;
+    color: white;
+    background-color: #345FDA;
+    margin: 0px 40px 0px 0px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul a:hover {
+    font-size: 1.1rem;
+    padding: 9px 9px;
+    color: white;
+    background-color: #4CAF50;
+}
+
+
+
 /* Estilos para el espacio debajo del navbar para que el contenido no se solape */
+main {
+    width: 100%;
+    height: 70%;
+}
+
+section {
+    width: 94%;
+    height: 350px;
+    margin: 0px 3% 30px;
+    padding: 0px;
+    
+}
+
+/* Estilos para pantallas del section 1 */
 #welcome-section {
-    margin-top: 60px; /* Ajusta según el alto de tu navbar */
+    margin-top: 60px;
+}
+
+.section-title {
+    width: 100%;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+    font-family: 'Autour One', cursive;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    color: #1976D2;
+}
+
+.section-subTitle {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Autour One', cursive;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    color: #1976D2;
+}
+
+#introduce-conten {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px 10px 0px;
+    padding: 0px;
+}
+
+.content {
+    display: flex
+    width: 100%;
+    height: 86%;
+    margin-right: 4%;
+}
+
+#photo-personal {
+    width: 25%;
+    height: 100%;
+
+    border-radius: 50%;
+}
+
+.introdution {
+    width: 100%%;
+    height: 250px;
+    padding: 0px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-family: 'Roboto Mono', cursive;
+    line-height: 25px;
+    color: #000000;
+}
+
+/* Section de perfil */
+#perfil-section{
+    height: 400px;
+    font-family: 'Roboto Mono', cursive;
+}
+.educacion {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin-top: 5px;
+    
+}
+.description{
+    text-align: justify;
+    color:#000000 ;
+    margin: 0px;
+}
+.sub-title {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.content-perfil{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    height: 98%;
+    margin-top: 2%;
+}
+}
+
+
+.educacion li {
+    margin: 0 0 20px 0;
+}
+
+.educacion h3 {
+    font-size: 18px;
+    color: #E64A19 ;
+}
+
+.educacion p {
+    margin: 0;
+    color: #FFA000;
+}
+/* Section de Certificacion */
+#certificacion-section{
+    height: 400px;
+}
+
+.content-Cart{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    height: 350px;
+    margin-top: 2%;
+}
+
+.card1{
+    width: 100%;
+    margin-right: 1%;
+    height: 100%;
+}
+
+.img-card{
+    width: 100%;
+    height: 250px;
+}
+
+/* Section de Proyectos */
+#projects{
+    height: 400px;
+}
+
+
+
+/* Estilos para pantallas del footer */
+footer {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #17202A;
+    justify-content: center;
+    align-content: center;
+}
+
+#copyRaid {
+    display: block;
+    width: 30%;
+    height: 100%;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    color: #2196F3;
+    animation: brilloColor 3s ease infinite;
+}
+
+/* Definición de la animación */
+@keyframes brilloColor {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+#socialFooter {
+    display: flex;
+    width: 60%;
+    height: 50px;
+}
+
+#socialFooter li a {
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+    color: #26C6DA;
+}
+
+#socialFooter li a:hover {
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 10px;
+    color: #AB47BC;
+}
+
+/* Estilos para pantallas más pequeñas */
+
+
+/*Los media queriz medidas 540px    720px   960px   1140px  1320px */
+
+/* On screens that are 540px or less, set the background color to blue */
+
+@media (min-width: 340px) {
+    body {
+        font-size: 14px;
+    }
 }

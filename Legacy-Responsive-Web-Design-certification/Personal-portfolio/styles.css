@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.5rem;
-    background-color:#95A5A6;
+    background-color:#EAECEE;
 }
 
 /* Estilos para el navbar fijo en la parte superior */
@@ -71,7 +71,7 @@ ul {
 /* Estilos para el espacio debajo del navbar para que el contenido no se solape */
 main {
     width: 100%;
-    height: 70%;
+    height: 30rem;
 }
 
 section {
@@ -252,9 +252,9 @@ footer {
         color: red;
     }
 }
-
+/* Ajustes y diceños del footer */
 #socialFooter {
-    display: flex;
+    display: inline-flex;
     width: 60%;
     height: 50px;
 }
